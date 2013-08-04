@@ -24,7 +24,7 @@ $ npm install redis-sub
     - subClient - optional - Subscribe client - read
 
 ```javascript
-  var redisPubSub = require('~~~~~~~');
+  var redisPubSub = require('redis-sub');
 
   var pubsub = new redisPubSub();
 

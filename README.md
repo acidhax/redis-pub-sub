@@ -26,7 +26,7 @@ $ npm install redis-sub
 ```javascript
   var redisPubSub = require('redis-sub');
 
-  var pubsub = new redisPubSub();
+  var pubsub = new redisPubSub({}); // <-- Options
 
   var duckFunc = function(quack) {
     console.log("QUACK!!?", quack);

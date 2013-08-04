@@ -31,7 +31,7 @@ $ npm install ~~~~~~~~~~
   }
   pubsub.on('ducks', duckFunc);
 
-  pubsub.pubClient.emit('ducks', "Quack! Quack...? QUUAWWWKWKKK");
+  pubsub.pubClient.publish('ducks', "Quack! Quack...? QUUAWWWKWKKK");
 
   pubsub.removeListener('ducks', duckFunc);
 

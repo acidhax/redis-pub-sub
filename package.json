@@ -1,18 +1,16 @@
 {
   "name": "redis-pub-sub",
   "version": "0.0.1",
-  "author": "Chris Miller <cmille142@gmail.com>",
+  "author": "Mathieu Gosbee <mail@matbee.com>",
   "main": "lib/redisPubSub.js",
   "directories": {
     "lib": "lib"
   },
   "dependencies": {
-    "nohm": "~0.9.3",
-    "hiredis": "~0.1.15",
     "redis": "~0.8.2"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/iamchrismiller/redis-pub-sub.git"
+    "url": "git://github.com/acidhax/redis-pub-sub.git"
   }
 }

@@ -22,7 +22,6 @@ $ npm install ~~~~~~~~~~
     - subClient - optional - Subscribe client - read
 
 ```javascript
-
   var redisPubSub = require('~~~~~~~');
 
   var pubsub = new redisPubSub();
@@ -35,7 +34,8 @@ $ npm install ~~~~~~~~~~
   pubsub.pubClient.publish('ducks', "Quack! Quack...? QUUAWWWKWKKK");
 
   pubsub.removeListener('ducks', duckFunc);
-
+  // OR
+  pubsub.removeAllListeners('ducks');
 ```
 
 ## License (MIT)

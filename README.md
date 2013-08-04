@@ -18,7 +18,8 @@ $ npm install ~~~~~~~~~~
     - port - default (6379) - Set the Redis-server Port #
     - connect_timeout - default (false) - Client will keep reconnecting until connected. This parameter should be in milliseconds and is counted once the disconnect occurs
     - max_attempts - default (null) - Client will keep reconnecting until connected. This parameter limits the total amount of reconnects
-
+    - pubClient - optional - Publish client - write
+    - subClient - optional - Subscribe client - read
 
 ```javascript
 

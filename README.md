@@ -1,11 +1,13 @@
-Node Redis Pub/Sub
+Node Redis Subscribe
 =================
 
-Small Redis pub/sub wrapper for Node.
+Small Redis Subscription wrapper for Node.
+No need to do anything with redis publish. It's just fine.
+This fixes Redis subscribing. The node way.
 
 ## Install
 ```bash
-$ npm install ~~~~~~~~~~
+$ npm install redis-sub
 ```
 
 ## Dependencies

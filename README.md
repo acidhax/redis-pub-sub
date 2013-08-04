@@ -24,13 +24,16 @@ $ npm install ~~~~~~~~~~
 
   var redisPubSub = require('~~~~~~~');
 
-  var appPubSub = new redisPubSub();
+  var pubsub = new redisPubSub();
 
-  appPubSub.on('rpc', function(data) {
-    console.log(data.name);
-  });
+  var duckFunc = function(quack) {
+    console.log("QUACK!!?", quack);
+  }
+  pubsub.on('ducks', duckFunc);
 
-  appPubSub.emit('rpc', {name : 'foo'});
+  pubsub.pubClient.emit('ducks', "Quack! Quack...? QUUAWWWKWKKK");
+
+  pubsub.removeListener('ducks', duckFunc);
 
 ```
 

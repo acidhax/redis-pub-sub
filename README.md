@@ -33,7 +33,7 @@ $ npm install redis-sub
   }
   pubsub.on('ducks', duckFunc);
 
-  pubsub.pubClient.publish('ducks', "Quack! Quack...? QUUAWWWKWKKK");
+  pubsub.publish('ducks', "Quack! Quack...? QUUAWWWKWKKK");
 
   pubsub.removeListener('ducks', duckFunc);
   // OR

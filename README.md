@@ -24,8 +24,8 @@ $ npm install redis-sub
 
 ```javascript
   var redisPubSub = require('redis-sub');
-  var mypubClient = redis.createConnection....
-  var mysubClient = redis.createConnection....
+  var mypubClient = redis.createClient('port', 'host'); // Write
+  var mysubClient = redis.createClient('port', 'host'); // Read
   var pubsub = new redisPubSub({pubClient: mypubClient, subClient: mysubClient});
 
   var duckFunc = function(quack) {

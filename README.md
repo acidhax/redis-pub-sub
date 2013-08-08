@@ -14,19 +14,19 @@ $ npm install redis-sub
   - redis : ~0.8.2
 
 ## Usage
-
+###
   - Options
-    - host - default (127.0.0.1) - Set the Redis-server Host IP
-    - port - default (6379) - Set the Redis-server Port #
-    - connect_timeout - default (false) - Client will keep reconnecting until connected. This parameter should be in milliseconds and is counted once the disconnect occurs
-    - max_attempts - default (null) - Client will keep reconnecting until connected. This parameter limits the total amount of reconnects
-    - pubClient - optional - Publish client - write
-    - subClient - optional - Subscribe client - read
+    - pubClient - Redis Publish client - write
+    - subClient - Redis Subscribe client - read
+
+####Redis-Sub:#publish()
+  - Short-hand access to pubClient.publish().
 
 ```javascript
   var redisPubSub = require('redis-sub');
-
-  var pubsub = new redisPubSub({}); // <-- Options
+  var mypubClient = redis.createConnection....
+  var mysubClient = redis.createConnection....
+  var pubsub = new redisPubSub({pubClient: mypubClient, subClient: mysubClient});
 
   var duckFunc = function(quack) {
     console.log("QUACK!!?", quack);

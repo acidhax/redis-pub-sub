@@ -1,102 +1,134 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
-2 info using npm@1.1.69
-3 info using node@v0.8.16
+1 verbose cli [ '/home/matbee/.nvm/v0.10.15/bin/node',
+1 verbose cli   '/home/matbee/.nvm/v0.10.15/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.3.5
+3 info using node@v0.10.15
 4 verbose publish [ '.' ]
-5 verbose read json /home/matbee/nodejs/redis-pub-sub/package.json
-6 verbose cache add [ '.', null ]
-7 silly cache add name=undefined spec="." args=[".",null]
-8 verbose parsed url { pathname: '.', path: '.', href: '.' }
-9 silly lockFile 3a52ce78- .
-10 verbose lock . /home/matbee/.npm/3a52ce78-.lock
-11 verbose read json package.json
-12 verbose tar pack [ '/home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/tmp.tgz',
-12 verbose tar pack   '.' ]
-13 verbose tarball /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/tmp.tgz
-14 verbose folder .
-15 info prepublish redis-sub@0.1.0
-16 silly lockFile 669373b3-22687-0-9281570613384247-tmp-tgz /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/tmp.tgz
-17 verbose lock /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/tmp.tgz /home/matbee/.npm/669373b3-22687-0-9281570613384247-tmp-tgz.lock
-18 silly lockFile 669373b3-22687-0-9281570613384247-tmp-tgz /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/tmp.tgz
-19 verbose tar unpack /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/tmp.tgz
-20 silly lockFile bdcf8d68-22687-0-9281570613384247-package /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/package
-21 verbose lock /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/package /home/matbee/.npm/bdcf8d68-22687-0-9281570613384247-package.lock
-22 silly gunzTarPerm modes [ '755', '644' ]
-23 silly gunzTarPerm extractEntry package.json
-24 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
-25 silly gunzTarPerm extractEntry .npmignore
-26 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
-27 silly gunzTarPerm extractEntry README.md
-28 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
-29 silly gunzTarPerm extractEntry lib/redisPubSub.js
-30 silly gunzTarPerm modified mode [ 'lib/redisPubSub.js', 436, 420 ]
-31 silly gunzTarPerm extractEntry spec/redisPubSub.js
-32 silly gunzTarPerm modified mode [ 'spec/redisPubSub.js', 436, 420 ]
-33 verbose read json /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/package/package.json
-34 silly lockFile bdcf8d68-22687-0-9281570613384247-package /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/package
-35 verbose from cache /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/package/package.json
-36 verbose tar pack [ '/home/matbee/.npm/redis-sub/0.1.0/package.tgz',
-36 verbose tar pack   '/home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/package' ]
-37 verbose tarball /home/matbee/.npm/redis-sub/0.1.0/package.tgz
-38 verbose folder /home/matbee/tmp/npm-3612/1375580522687-0.9281570613384247/package
-39 silly lockFile 80360ce6--npm-redis-sub-0-1-0-package-tgz /home/matbee/.npm/redis-sub/0.1.0/package.tgz
-40 verbose lock /home/matbee/.npm/redis-sub/0.1.0/package.tgz /home/matbee/.npm/80360ce6--npm-redis-sub-0-1-0-package-tgz.lock
-41 silly lockFile 80360ce6--npm-redis-sub-0-1-0-package-tgz /home/matbee/.npm/redis-sub/0.1.0/package.tgz
-42 silly lockFile 70914a2c-tbee-npm-redis-sub-0-1-0-package /home/matbee/.npm/redis-sub/0.1.0/package
-43 verbose lock /home/matbee/.npm/redis-sub/0.1.0/package /home/matbee/.npm/70914a2c-tbee-npm-redis-sub-0-1-0-package.lock
-44 silly lockFile 70914a2c-tbee-npm-redis-sub-0-1-0-package /home/matbee/.npm/redis-sub/0.1.0/package
-45 verbose tar unpack /home/matbee/.npm/redis-sub/0.1.0/package.tgz
-46 silly lockFile 70914a2c-tbee-npm-redis-sub-0-1-0-package /home/matbee/.npm/redis-sub/0.1.0/package
-47 verbose lock /home/matbee/.npm/redis-sub/0.1.0/package /home/matbee/.npm/70914a2c-tbee-npm-redis-sub-0-1-0-package.lock
-48 silly gunzTarPerm modes [ '755', '644' ]
-49 silly gunzTarPerm extractEntry package.json
-50 silly gunzTarPerm extractEntry .npmignore
-51 silly gunzTarPerm extractEntry README.md
-52 silly gunzTarPerm extractEntry lib/redisPubSub.js
-53 silly gunzTarPerm extractEntry spec/redisPubSub.js
-54 verbose read json /home/matbee/.npm/redis-sub/0.1.0/package/package.json
-55 silly lockFile 70914a2c-tbee-npm-redis-sub-0-1-0-package /home/matbee/.npm/redis-sub/0.1.0/package
-56 silly shasum updated bytes 2240
-57 info shasum 6d67d547dbe0c9f9953717f1ffd3a562346ef89e
-57 info shasum /home/matbee/.npm/redis-sub/0.1.0/package.tgz
-58 verbose from cache /home/matbee/.npm/redis-sub/0.1.0/package/package.json
-59 verbose chmod /home/matbee/.npm/redis-sub/0.1.0/package.tgz 644
-60 verbose chown /home/matbee/.npm/redis-sub/0.1.0/package.tgz [ 1000, 1000 ]
-61 silly lockFile 3a52ce78- .
-62 silly publish { name: 'redis-sub',
-62 silly publish   version: '0.1.0',
-62 silly publish   author: { name: 'Mathieu Gosbee', email: 'mail@matbee.com' },
-62 silly publish   main: 'lib/redisPubSub.js',
-62 silly publish   directories: { lib: 'lib' },
-62 silly publish   dependencies: { redis: '~0.8.2' },
-62 silly publish   repository:
-62 silly publish    { type: 'git',
-62 silly publish      url: 'git://github.com/acidhax/redis-pub-sub.git' },
-62 silly publish   readme: 'Node Redis Subscribe\n=================\n\nSmall Redis Subscription wrapper for Node.\nNo need to do anything with redis publish. It\'s just fine.\nThis fixes Redis subscribing. The node way.\n\n## Install\n```bash\n$ npm install redis-sub\n```\n\n## Dependencies\n  - redis : ~0.8.2\n\n## Usage\n\n  - Options\n    - host - default (127.0.0.1) - Set the Redis-server Host IP\n    - port - default (6379) - Set the Redis-server Port #\n    - connect_timeout - default (false) - Client will keep reconnecting until connected. This parameter should be in milliseconds and is counted once the disconnect occurs\n    - max_attempts - default (null) - Client will keep reconnecting until connected. This parameter limits the total amount of reconnects\n    - pubClient - optional - Publish client - write\n    - subClient - optional - Subscribe client - read\n\n```javascript\n  var redisPubSub = require(\'redis-sub\');\n\n  var pubsub = new redisPubSub({}); // <-- Options\n\n  var duckFunc = function(quack) {\n    console.log("QUACK!!?", quack);\n  }\n  pubsub.on(\'ducks\', duckFunc);\n\n  pubsub.pubClient.publish(\'ducks\', "Quack! Quack...? QUUAWWWKWKKK");\n\n  pubsub.removeListener(\'ducks\', duckFunc);\n  // OR\n  pubsub.removeAllListeners(\'ducks\');\n```\n\n## License (MIT)\n\nCopyright 2013 Mathieu Gosbee\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n"Software"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
-62 silly publish   readmeFilename: 'README.md',
-62 silly publish   _id: 'redis-sub@0.1.0',
-62 silly publish   description: 'Node Redis Subscribe =================',
-62 silly publish   dist: { shasum: '6d67d547dbe0c9f9953717f1ffd3a562346ef89e' } }
-63 verbose url raw redis-sub
-64 verbose url resolving [ 'https://registry.npmjs.org/', './redis-sub' ]
-65 verbose url resolved https://registry.npmjs.org/redis-sub
-66 info trying registry request attempt 1 at 21:42:02
-67 http PUT https://registry.npmjs.org/redis-sub
-68 http 409 https://registry.npmjs.org/redis-sub
-69 verbose url raw redis-sub
-70 verbose url resolving [ 'https://registry.npmjs.org/', './redis-sub' ]
-71 verbose url resolved https://registry.npmjs.org/redis-sub
-72 info trying registry request attempt 1 at 21:42:03
-73 http GET https://registry.npmjs.org/redis-sub
-74 http 200 https://registry.npmjs.org/redis-sub
-75 error publish fail Cannot publish over existing version.
-75 error publish fail Bump the 'version' field, set the --force flag, or
-75 error publish fail     npm unpublish 'redis-sub@0.1.0'
-75 error publish fail and try again
-76 error System Linux 3.8.0-27-generic
-77 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
-78 error cwd /home/matbee/nodejs/redis-pub-sub
-79 error node -v v0.8.16
-80 error npm -v 1.1.69
-81 error code EPUBLISHCONFLICT
-82 verbose exit [ 1, true ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/matbee/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz
+12 verbose folder .
+13 info prepublish redis-sub@0.1.6
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/matbee/.npm/1f1177db-tar.lock
+16 silly lockFile 7ffb2a3d-71136-0-7881275278050452-tmp-tgz tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz
+17 verbose lock tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz /home/matbee/.npm/7ffb2a3d-71136-0-7881275278050452-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 7ffb2a3d-71136-0-7881275278050452-tmp-tgz tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz
+21 silly lockFile 7ffb2a3d-71136-0-7881275278050452-tmp-tgz tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz
+22 verbose tar unpack /home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz
+23 silly lockFile ba55bdbc-71136-0-7881275278050452-package tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package
+24 verbose lock tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package /home/matbee/.npm/ba55bdbc-71136-0-7881275278050452-package.lock
+25 silly lockFile 7ffb2a3d-71136-0-7881275278050452-tmp-tgz tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz
+26 verbose lock tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz /home/matbee/.npm/7ffb2a3d-71136-0-7881275278050452-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+30 silly gunzTarPerm extractEntry .npmignore
+31 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+34 silly gunzTarPerm extractEntry lib/redisPubSub.js
+35 silly gunzTarPerm modified mode [ 'lib/redisPubSub.js', 436, 420 ]
+36 silly gunzTarPerm extractEntry spec/redisPubSub.js
+37 silly gunzTarPerm modified mode [ 'spec/redisPubSub.js', 436, 420 ]
+38 silly lockFile ba55bdbc-71136-0-7881275278050452-package tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package
+39 silly lockFile ba55bdbc-71136-0-7881275278050452-package tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package
+40 silly lockFile 7ffb2a3d-71136-0-7881275278050452-tmp-tgz tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz
+41 silly lockFile 7ffb2a3d-71136-0-7881275278050452-tmp-tgz tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/tmp.tgz
+42 verbose tar pack [ '/home/matbee/.npm/redis-sub/0.1.6/package.tgz',
+42 verbose tar pack   '/home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package' ]
+43 verbose tarball /home/matbee/.npm/redis-sub/0.1.6/package.tgz
+44 verbose folder /home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package
+45 silly lockFile ba55bdbc-71136-0-7881275278050452-package tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package
+46 verbose lock tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package /home/matbee/.npm/ba55bdbc-71136-0-7881275278050452-package.lock
+47 silly lockFile e790be16--npm-redis-sub-0-1-6-package-tgz tar:///home/matbee/.npm/redis-sub/0.1.6/package.tgz
+48 verbose lock tar:///home/matbee/.npm/redis-sub/0.1.6/package.tgz /home/matbee/.npm/e790be16--npm-redis-sub-0-1-6-package-tgz.lock
+49 silly lockFile ba55bdbc-71136-0-7881275278050452-package tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package
+50 silly lockFile ba55bdbc-71136-0-7881275278050452-package tar:///home/matbee/tmp/npm-28845-fucgbz-0/1375725471136-0.7881275278050452/package
+51 silly lockFile e790be16--npm-redis-sub-0-1-6-package-tgz tar:///home/matbee/.npm/redis-sub/0.1.6/package.tgz
+52 silly lockFile e790be16--npm-redis-sub-0-1-6-package-tgz tar:///home/matbee/.npm/redis-sub/0.1.6/package.tgz
+53 silly lockFile ee9f2181-tbee-npm-redis-sub-0-1-6-package /home/matbee/.npm/redis-sub/0.1.6/package
+54 verbose lock /home/matbee/.npm/redis-sub/0.1.6/package /home/matbee/.npm/ee9f2181-tbee-npm-redis-sub-0-1-6-package.lock
+55 silly lockFile ee9f2181-tbee-npm-redis-sub-0-1-6-package /home/matbee/.npm/redis-sub/0.1.6/package
+56 silly lockFile ee9f2181-tbee-npm-redis-sub-0-1-6-package /home/matbee/.npm/redis-sub/0.1.6/package
+57 verbose tar unpack /home/matbee/.npm/redis-sub/0.1.6/package.tgz
+58 silly lockFile db11b8da-tbee-npm-redis-sub-0-1-6-package tar:///home/matbee/.npm/redis-sub/0.1.6/package
+59 verbose lock tar:///home/matbee/.npm/redis-sub/0.1.6/package /home/matbee/.npm/db11b8da-tbee-npm-redis-sub-0-1-6-package.lock
+60 silly lockFile e790be16--npm-redis-sub-0-1-6-package-tgz tar:///home/matbee/.npm/redis-sub/0.1.6/package.tgz
+61 verbose lock tar:///home/matbee/.npm/redis-sub/0.1.6/package.tgz /home/matbee/.npm/e790be16--npm-redis-sub-0-1-6-package-tgz.lock
+62 silly gunzTarPerm modes [ '755', '644' ]
+63 silly gunzTarPerm extractEntry package.json
+64 silly gunzTarPerm extractEntry .npmignore
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm extractEntry lib/redisPubSub.js
+67 silly gunzTarPerm extractEntry spec/redisPubSub.js
+68 silly lockFile db11b8da-tbee-npm-redis-sub-0-1-6-package tar:///home/matbee/.npm/redis-sub/0.1.6/package
+69 silly lockFile db11b8da-tbee-npm-redis-sub-0-1-6-package tar:///home/matbee/.npm/redis-sub/0.1.6/package
+70 silly lockFile e790be16--npm-redis-sub-0-1-6-package-tgz tar:///home/matbee/.npm/redis-sub/0.1.6/package.tgz
+71 silly lockFile e790be16--npm-redis-sub-0-1-6-package-tgz tar:///home/matbee/.npm/redis-sub/0.1.6/package.tgz
+72 verbose chmod /home/matbee/.npm/redis-sub/0.1.6/package.tgz 644
+73 verbose chown /home/matbee/.npm/redis-sub/0.1.6/package.tgz [ 1000, 1000 ]
+74 silly lockFile 3a52ce78- .
+75 silly lockFile 3a52ce78- .
+76 silly publish { name: 'redis-sub',
+76 silly publish   version: '0.1.6',
+76 silly publish   author: { name: 'Mathieu Gosbee', email: 'mail@matbee.com' },
+76 silly publish   main: 'lib/redisPubSub.js',
+76 silly publish   directories: { lib: 'lib' },
+76 silly publish   dependencies: { redis: '~0.8.2' },
+76 silly publish   repository:
+76 silly publish    { type: 'git',
+76 silly publish      url: 'git://github.com/acidhax/redis-pub-sub.git' },
+76 silly publish   readme: 'Node Redis Subscribe\n=================\n\nSmall Redis Subscription wrapper for Node.\nNo need to do anything with redis publish. It\'s just fine.\nThis fixes Redis subscribing. The node way.\n\n## Install\n```bash\n$ npm install redis-sub\n```\n\n## Dependencies\n  - redis : ~0.8.2\n\n## Usage\n\n  - Options\n    - host - default (127.0.0.1) - Set the Redis-server Host IP\n    - port - default (6379) - Set the Redis-server Port #\n    - connect_timeout - default (false) - Client will keep reconnecting until connected. This parameter should be in milliseconds and is counted once the disconnect occurs\n    - max_attempts - default (null) - Client will keep reconnecting until connected. This parameter limits the total amount of reconnects\n    - pubClient - optional - Publish client - write\n    - subClient - optional - Subscribe client - read\n\n```javascript\n  var redisPubSub = require(\'redis-sub\');\n\n  var pubsub = new redisPubSub({}); // <-- Options\n\n  var duckFunc = function(quack) {\n    console.log("QUACK!!?", quack);\n  }\n  pubsub.on(\'ducks\', duckFunc);\n\n  pubsub.publish(\'ducks\', "Quack! Quack...? QUUAWWWKWKKK");\n\n  pubsub.removeListener(\'ducks\', duckFunc);\n  // OR\n  pubsub.removeAllListeners(\'ducks\');\n```\n\n## License (MIT)\n\nCopyright 2013 Mathieu Gosbee\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n"Software"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
+76 silly publish   readmeFilename: 'README.md',
+76 silly publish   description: 'Node Redis Subscribe =================',
+76 silly publish   bugs: { url: 'https://github.com/acidhax/redis-pub-sub/issues' },
+76 silly publish   _id: 'redis-sub@0.1.6',
+76 silly publish   dist: { shasum: '68bf768516c2df723bdf324a7f1b965de9767bfa' },
+76 silly publish   _from: '.' }
+77 verbose url raw redis-sub
+78 verbose url resolving [ 'https://registry.npmjs.org/', './redis-sub' ]
+79 verbose url resolved https://registry.npmjs.org/redis-sub
+80 info trying registry request attempt 1 at 13:57:51
+81 http PUT https://registry.npmjs.org/redis-sub
+82 http 409 https://registry.npmjs.org/redis-sub
+83 verbose url raw redis-sub
+84 verbose url resolving [ 'https://registry.npmjs.org/', './redis-sub' ]
+85 verbose url resolved https://registry.npmjs.org/redis-sub
+86 info trying registry request attempt 1 at 13:58:17
+87 http GET https://registry.npmjs.org/redis-sub
+88 http 200 https://registry.npmjs.org/redis-sub
+89 error publish fail Cannot publish over existing version.
+89 error publish fail Update the 'version' field in package.json and try again.
+89 error publish fail
+89 error publish fail If the previous version was published in error, see:
+89 error publish fail     npm help unpublish
+89 error publish fail
+89 error publish fail To automatically increment version numbers, see:
+89 error publish fail     npm help version
+90 error System Linux 3.8.0-27-generic
+91 error command "/home/matbee/.nvm/v0.10.15/bin/node" "/home/matbee/.nvm/v0.10.15/bin/npm" "publish"
+92 error cwd /home/matbee/nodejs/redis-pub-sub
+93 error node -v v0.10.15
+94 error npm -v 1.3.5
+95 error code EPUBLISHCONFLICT
+96 verbose exit [ 1, true ]

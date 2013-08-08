@@ -13,11 +13,12 @@ $ npm install redis-sub
 ## Dependencies
   - redis : ~0.8.2
 
-## Usage
 ###
   - Options
     - pubClient - Redis Publish client - write
     - subClient - Redis Subscribe client - read
+
+## How to use
 
 ####Redis-Sub:#publish()
   - Short-hand access to pubClient.publish().

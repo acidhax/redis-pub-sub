@@ -18,10 +18,10 @@ $ npm install redis-sub
     - pubClient - Redis Publish client - write
     - subClient - Redis Subscribe client - read
 
-## How to use
-
 ####Redis-Sub:#publish()
   - Short-hand access to pubClient.publish().
+
+## How to use
 
 ```javascript
   var redisPubSub = require('redis-sub');

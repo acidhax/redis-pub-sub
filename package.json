@@ -1,6 +1,6 @@
 {
   "name": "redis-sub",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "author": "Mathieu Gosbee <mail@matbee.com>",
   "main": "lib/redisPubSub.js",
   "directories": {
